@@ -8,8 +8,14 @@ _Генерирует симметричную пиксельную аватар
 ___
 ## Установка и сборка
 1. Клонируйте репозиторий с помощью команды ниже:
-   ```git clone https://github.com/faermot/Pixel-Avatar-Generate.git```
-2. Установите необходимые зависимости:
-   ```dotnet add package SixLabors.ImageSharp --version 3.1.12```
-3. Выполните сборку:
-   ```dotnet build```
+   ```
+   git clone https://github.com/faermot/Pixel-Avatar-Generate.git
+   ```
+3. Установите необходимые зависимости:
+   ```
+   dotnet add package SixLabors.ImageSharp --version 3.1.12
+   ```
+5. Выполните сборку:
+   ```
+   dotnet build
+   ```
