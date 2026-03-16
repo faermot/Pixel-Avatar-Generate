@@ -110,7 +110,9 @@ namespace PAG
             string bits = "";
             for (int i = 0; i < inside_size; i++)
             {
-                int bit = (bytes[0] >> i) & 1;
+                int byteIndex = i / 8;
+                int bitIndex = i % 8;
+                int bit = (bytes[byteIndex] >> bitIndex) & 1;
                 bits += bit;
             }
 
