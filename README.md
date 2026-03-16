@@ -11,11 +11,7 @@ ___
    ```
    git clone https://github.com/faermot/Pixel-Avatar-Generate.git
    ```
-2. Установите необходимые зависимости:
-   ```
-   dotnet add package SixLabors.ImageSharp --version 3.1.12
-   ```
-3. Выполните сборку:
+2. Выполните сборку:
    ```
    dotnet build
    ```
