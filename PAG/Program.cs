@@ -6,9 +6,20 @@ namespace PixelAvatarGenerate
     {
         static void Main(string[] args)
         {
-            AvatarGenerator generator = new AvatarGenerator("dobzhik", 8);
+            Console.Write("Введите никнейм: ");
+            string nickname = Console.ReadLine();
+
+            int size;
+            Console.Write("Введите размер: ");
+            if (!int.TryParse(Console.ReadLine(), out size))
+            {
+                Console.Write("\nОшибка! Пожалуйста, введите корретное значение (например 5): ");
+            }
+
+            AvatarGenerator generator = new AvatarGenerator(nickname, size);
             ImageRender render = new ImageRender(generator.Generate());
-            Console.WriteLine("Изображение 'output.png' успешно сохранено в папке с программой!");
+            
+            Console.WriteLine("\n\nИзображение 'output.png' успешно сохранено в папке с программой!");
 
             Console.ReadKey();
         }
