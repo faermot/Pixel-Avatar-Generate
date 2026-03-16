@@ -11,9 +11,9 @@ namespace PixelAvatarGenerate
 
             int size;
             Console.Write("Введите размер: ");
-            if (!int.TryParse(Console.ReadLine(), out size))
+            while (!int.TryParse(Console.ReadLine(), out size))
             {
-                Console.Write("\nОшибка! Пожалуйста, введите корретное значение (например 5): ");
+                Console.Write("Ошибка! Пожалуйста, введите корретное значение (например 5): ");
             }
 
             AvatarGenerator generator = new AvatarGenerator(nickname, size);
